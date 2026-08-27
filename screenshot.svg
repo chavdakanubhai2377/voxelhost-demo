@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 960 540" role="img" aria-label="Server mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#065f46" />
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" rx="16" fill="url(#bg)"/>
+
+  <!-- Blocky landscape (pixel-style squares) -->
+  <g transform="translate(40,60)">
+    <g id="blocks">
+      <g>
+        <rect x="0" y="280" width="40" height="40" fill="#4ade80" />
+        <rect x="40" y="280" width="40" height="40" fill="#34d399" />
+        <rect x="80" y="280" width="40" height="40" fill="#10b981" />
+        <rect x="120" y="280" width="40" height="40" fill="#059669" />
+        <rect x="160" y="280" width="40" height="40" fill="#065f46" />
+        <rect x="200" y="280" width="40" height="40" fill="#4ade80" />
+      </g>
+      <g>
+        <rect x="0" y="240" width="40" height="40" fill="#bef264" />
+        <rect x="40" y="240" width="40" height="40" fill="#86efac" />
+        <rect x="80" y="240" width="40" height="40" fill="#4ade80" />
+        <rect x="120" y="240" width="40" height="40" fill="#34d399" />
+        <rect x="160" y="240" width="40" height="40" fill="#10b981" />
+        <rect x="200" y="240" width="40" height="40" fill="#059669" />
+      </g>
+      <g>
+        <rect x="0" y="200" width="40" height="40" fill="#60a5fa" />
+        <rect x="40" y="200" width="40" height="40" fill="#3b82f6" />
+        <rect x="80" y="200" width="40" height="40" fill="#2563eb" />
+        <rect x="120" y="200" width="40" height="40" fill="#1d4ed8" />
+        <rect x="160" y="200" width="40" height="40" fill="#60a5fa" />
+        <rect x="200" y="200" width="40" height="40" fill="#3b82f6" />
+      </g>
+      <g>
+        <rect x="40" y="160" width="40" height="40" fill="#92400e" />
+        <rect x="80" y="160" width="40" height="40" fill="#b45309" />
+        <rect x="120" y="160" width="40" height="40" fill="#d97706" />
+        <rect x="160" y="160" width="40" height="40" fill="#f59e0b" />
+      </g>
+    </g>
+
+    <!-- translucent server overlay box -->
+    <rect x="360" y="40" width="520" height="320" rx="10" fill="#000000" fill-opacity="0.35" stroke="#ffffff" stroke-opacity="0.08" />
+
+    <!-- overlay text: server info -->
+    <text x="380" y="76" font-family="Inter, Arial, sans-serif" font-size="20" fill="#ffffff" font-weight="700">VoxelHost • play.voxelhost.gg</text>
+    <text x="380" y="104" font-family="Inter, Arial, sans-serif" font-size="14" fill="#d1fae5">Players: 12/100 · Status: <tspan fill="#34d399">Online</tspan></text>
+
+    <!-- console lines -->
+    <g font-family="monospace" font-size="12" fill="#c7f9e6">
+      <text x="380" y="140">[00:01:02] Server started. TPS: 20.0</text>
+      <text x="380" y="160">[00:01:03] World loaded: world</text>
+      <text x="380" y="180">[00:01:05] Auto-backup completed.</text>
+      <text x="380" y="200">[00:01:22] Player joined: BlockySteve</text>
+      <text x="380" y="220">[00:01:45] Player joined: PixelQueen</text>
+    </g>
+
+    <!-- small start/stop buttons -->
+    <rect x="380" y="240" width="100" height="36" rx="6" fill="#10b981" />
+    <text x="394" y="264" font-family="Inter, Arial, sans-serif" font-size="14" fill="#00291b">Start</text>
+    <rect x="492" y="240" width="100" height="36" rx="6" fill="#ef4444" />
+    <text x="506" y="264" font-family="Inter, Arial, sans-serif" font-size="14" fill="#fff">Stop</text>
+
+  </g>
+
+  <!-- subtle frame / drop shadow -->
+  <rect x="0.5" y="0.5" width="959" height="539" rx="16" fill="none" stroke="#000" stroke-opacity="0.2" />
+</svg>
