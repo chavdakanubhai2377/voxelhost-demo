@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="20" fill="#065f46" />
+  <!-- pixel cube -->
+  <g transform="translate(28,28)">
+    <rect x="0" y="0" width="72" height="72" fill="#10b981" stroke="#064e3b" stroke-width="2" />
+    <rect x="8" y="8" width="24" height="24" fill="#34d399" />
+    <rect x="40" y="8" width="24" height="24" fill="#059669" />
+    <rect x="8" y="40" width="24" height="24" fill="#34d399" />
+    <rect x="40" y="40" width="24" height="24" fill="#059669" />
+  </g>
+  <text x="64" y="114" font-size="14" font-family="Inter, Arial" fill="#e6f7ef" text-anchor="middle">VoxelHost</text>
+</svg>

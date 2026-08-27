@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VoxelHost — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="logo.svg" alt="VoxelHost" class="logo">
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Host Your Minecraft World</h1>
+          <p class="sub">Low-latency servers • Automated backups • 24/7 support</p>
+          <a class="cta" href="#">Get Started</a>
+        </div>
+        <div class="hero-mock">
+          <!-- Inline SVG mock screenshot that looks like a server control panel / in-game overlay -->
+          <svg viewBox="0 0 960 540" class="mock-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Server mockup">
+            <defs>
+              <linearGradient id="bg" x1="0" x2="1">
+                <stop offset="0" stop-color="#0f172a" />
+                <stop offset="1" stop-color="#065f46" />
+              </linearGradient>
+              <filter id="pixel" x="-10%" y="-10%" width="120%" height="120%">
+                <feTurbulence baseFrequency="0.02" numOctaves="1" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" />
+              </filter>
+            </defs>
+
+            <rect width="960" height="540" rx="16" fill="url(#bg)"/>
+
+            <!-- Blocky landscape (pixel-style squares) -->
+            <g transform="translate(40,60)">
+              <!-- draw a grid of squares to simulate blocky terrain -->
+              <g id="blocks">
+                <!-- rows -->
+                <!-- We'll draw several rows with different colors -->
+                <!-- Row 1 -->
+                <g>
+                  <rect x="0" y="280" width="40" height="40" fill="#4ade80" />
+                  <rect x="40" y="280" width="40" height="40" fill="#34d399" />
+                  <rect x="80" y="280" width="40" height="40" fill="#10b981" />
+                  <rect x="120" y="280" width="40" height="40" fill="#059669" />
+                  <rect x="160" y="280" width="40" height="40" fill="#065f46" />
+                  <rect x="200" y="280" width="40" height="40" fill="#4ade80" />
+                </g>
+                <!-- Row 2 -->
+                <g>
+                  <rect x="0" y="240" width="40" height="40" fill="#bef264" />
+                  <rect x="40" y="240" width="40" height="40" fill="#86efac" />
+                  <rect x="80" y="240" width="40" height="40" fill="#4ade80" />
+                  <rect x="120" y="240" width="40" height="40" fill="#34d399" />
+                  <rect x="160" y="240" width="40" height="40" fill="#10b981" />
+                  <rect x="200" y="240" width="40" height="40" fill="#059669" />
+                </g>
+                <!-- Row 3 -->
+                <g>
+                  <rect x="0" y="200" width="40" height="40" fill="#60a5fa" />
+                  <rect x="40" y="200" width="40" height="40" fill="#3b82f6" />
+                  <rect x="80" y="200" width="40" height="40" fill="#2563eb" />
+                  <rect x="120" y="200" width="40" height="40" fill="#1d4ed8" />
+                  <rect x="160" y="200" width="40" height="40" fill="#60a5fa" />
+                  <rect x="200" y="200" width="40" height="40" fill="#3b82f6" />
+                </g>
+                <!-- Row 4 (darker blocks for depth) -->
+                <g>
+                  <rect x="40" y="160" width="40" height="40" fill="#92400e" />
+                  <rect x="80" y="160" width="40" height="40" fill="#b45309" />
+                  <rect x="120" y="160" width="40" height="40" fill="#d97706" />
+                  <rect x="160" y="160" width="40" height="40" fill="#f59e0b" />
+                </g>
+              </g>
+
+              <!-- translucent server overlay box -->
+              <rect x="360" y="40" width="520" height="320" rx="10" fill="#000000" fill-opacity="0.35" stroke="#ffffff" stroke-opacity="0.08" />
+
+              <!-- overlay text: server info -->
+              <text x="380" y="76" font-family="Inter, Arial, sans-serif" font-size="20" fill="#ffffff" font-weight="700">VoxelHost • play.voxelhost.gg</text>
+              <text x="380" y="104" font-family="Inter, Arial, sans-serif" font-size="14" fill="#d1fae5">Players: 12/100 · Status: <tspan fill="#34d399">Online</tspan></text>
+
+              <!-- console lines -->
+              <g font-family="monospace" font-size="12" fill="#c7f9e6">
+                <text x="380" y="140">[00:01:02] Server started. TPS: 20.0</text>
+                <text x="380" y="160">[00:01:03] World loaded: world</text>
+                <text x="380" y="180">[00:01:05] Auto-backup completed.</text>
+                <text x="380" y="200">[00:01:22] Player joined: BlockySteve</text>
+                <text x="380" y="220">[00:01:45] Player joined: PixelQueen</text>
+              </g>
+
+              <!-- small start/stop buttons -->
+              <rect x="380" y="240" width="100" height="36" rx="6" fill="#10b981" />
+              <text x="394" y="264" font-family="Inter, Arial, sans-serif" font-size="14" fill="#00291b">Start</text>
+              <rect x="492" y="240" width="100" height="36" rx="6" fill="#ef4444" />
+              <text x="506" y="264" font-family="Inter, Arial, sans-serif" font-size="14" fill="#fff">Stop</text>
+
+            </g>
+
+            <!-- subtle frame / drop shadow -->
+            <rect x="0.5" y="0.5" width="959" height="539" rx="16" fill="none" stroke="#000" stroke-opacity="0.2" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Why VoxelHost?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Low latency</h3>
+          <p>Optimized network routes for minimal ping.</p>
+        </div>
+        <div class="card">
+          <h3>Automatic backups</h3>
+          <p>Daily backups with easy restores.</p>
+        </div>
+        <div class="card">
+          <h3>24/7 support</h3>
+          <p>We’re here to help whenever you need us.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="container pricing">
+      <h2>Simple pricing</h2>
+      <div class="pricing-grid">
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="price">$3 / month</p>
+          <ul>
+            <li>1 vCPU • 1 GB RAM</li>
+            <li>50 GB storage</li>
+            <li>Up to 10 players</li>
+          </ul>
+          <a class="cta small" href="#">Buy</a>
+        </div>
+        <div class="plan recommended">
+          <h3>Popular</h3>
+          <p class="price">$8 / month</p>
+          <ul>
+            <li>2 vCPU • 4 GB RAM</li>
+            <li>100 GB storage</li>
+            <li>Up to 50 players</li>
+          </ul>
+          <a class="cta small" href="#">Buy</a>
+        </div>
+        <div class="plan">
+          <h3>Pro</h3>
+          <p class="price">$20 / month</p>
+          <ul>
+            <li>4 vCPU • 8 GB RAM</li>
+            <li>250 GB storage</li>
+            <li>Unlimited players</li>
+          </ul>
+          <a class="cta small" href="#">Buy</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 VoxelHost — Demo. This is a demo site only.</p>
+      <p><small>To deploy: import this repository into Vercel or Netlify (instructions in README).</small></p>
+    </div>
+  </footer>
+</body>
+</html>
